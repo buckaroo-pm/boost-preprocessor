@@ -1,0 +1,29 @@
+cxx_binary(
+  name = 'arithmetic', 
+  header_namespace = '', 
+  headers = {
+    'libs/preprocessor/test/test.h': 'test.h', 
+    'libs/preprocessor/test/arithmetic.cxx': 'arithmetic.cxx', 
+  }, 
+  srcs = [
+    'arithmetic.cpp', 
+  ], 
+  deps = [
+    '//:preprocessor', 
+  ], 
+)
+
+cxx_binary(
+  name = 'array', 
+  header_namespace = '', 
+  headers = {
+    'libs/preprocessor/test/test.h': 'test.h', 
+    'libs/preprocessor/test/array.cxx': 'array.cxx', 
+  }, 
+  srcs = [
+    'array.cpp', 
+  ], 
+  deps = [
+    '//:preprocessor', 
+  ], 
+)
